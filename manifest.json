@@ -1,0 +1,19 @@
+{
+   "content_scripts": [ {
+      "js": [ "replace/replace.js" ],
+      "matches": [ "http://*/*", "https://*/*" ],
+      "css": ["replace/styles.css"]
+   } ],
+   "content_security_policy": "script-src 'self'; object-src 'self'",
+   "default_locale": "en",
+   "description": "Расширение для браузера, которое заменяет все картинки на странице на котиков",
+   "icons": {
+      "128": "logo128.png",
+      "16": "logo16.png"
+   },
+   "manifest_version": 2,
+   "name": "Котозаменитель",
+   "permissions": [ "contextMenus" ],
+   "short_name": "Котозаменитель",
+   "version": "0.1.0"
+}
